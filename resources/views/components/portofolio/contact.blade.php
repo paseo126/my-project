@@ -1,10 +1,10 @@
-@extends('layouts.apps')
-@section('content')
-    <section class="py-5">
-        <div class="container px-5">
+{{-- @extends('layouts.apps')
+@section('content') --}}
+    <section class="mb-5" id="contact">
+        <div class="container px-5 pb-5 bg-light">
             <!-- Contact form-->
-            <div class="bg-light rounded-4 py-5 px-4 px-md-5">
-                <div class="text-center mb-5">
+            <div class="">
+                <div class="text-center mb-5 pt-5">
                     <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
                     <h1 class="fw-bolder">Get in touch</h1>
                     <p class="lead fw-normal text-muted mb-0">Let's work together!</p>
@@ -21,20 +21,20 @@
                         <form id="contactForm" data-sb-form-api-token="API_TOKEN">
                             <!-- Name input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required"  autocomplete="off"/>
                                 <label for="name">Full name</label>
                                 <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                             </div>
                             <!-- Email address input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" autocomplete="off"/>
                                 <label for="email">Email address</label>
                                 <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                                 <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                             </div>
                             <!-- Phone number input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" autocomplete="off"/>
                                 <label for="phone">Phone number</label>
                                 <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
                             </div>
@@ -69,4 +69,4 @@
             </div>
         </div>
     </section>
-@endsection
+{{-- @endsection --}}

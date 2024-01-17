@@ -28,6 +28,11 @@
             </div>
         </div>
     </header>
+
+    {{-- resume --}}
+    @include('components.portofolio.resume')
+    @include('components.portofolio.project')
+    @include('components.portofolio.contact')
     <!-- About Section-->
     <section class="bg-light py-5">
         <div class="container px-5">
@@ -49,28 +54,16 @@
     </section>
 
     
+
+    
 @endsection
 
 @section('btm-script')
 <script>
    $(document).ready(function () {
-        // $('a.sosmed').hover(function () {
-        //     $(this).find('span').stop().animate({
-        //         opacity: 1,
-        //         marginLeft: '0' // Slide from left to right
-        //     }, 300, function () {
-        //         // Callback function to toggle class after fadeIn effect
-        //         $(this).removeClass('d-none');
-        //     });
-        // }, function () {
-        //     $(this).find('span').stop().animate({
-        //         opacity: 0,
-        //         marginLeft: '-10px' // Slide from right to left
-        //     }, 300, function () {
-        //         // Callback function to toggle class after fadeOut effect
-        //         $(this).addClass('d-none');
-        //     });
-        // });
+        AOS.init({
+            duration: 1200,
+        })
     });
 
 
