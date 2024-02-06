@@ -61,6 +61,9 @@
 @section('btm-script')
 <script>
 
+    $(document).ready(function () {
+        AOS.init();
+    });
 
    
    $('#contactForm').submit(function (e) {
