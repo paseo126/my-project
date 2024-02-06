@@ -10,8 +10,8 @@
                         <div class="fs-3 fw-light text-muted">I am accustomed to creating projects with</div>
                         <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">Laravel</span></h1>
                         <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
-                            <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="{{ asset('/resume') }}">Resume</a>
-                            <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="{{ asset('/project') }}">Projects</a>
+                            <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="#resume">Resume</a>
+                            <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="#project">Projects</a>
                         </div>
                     </div>
                 </div>
@@ -43,9 +43,9 @@
                         <p class="lead fw-light mb-4">My name is Rudi Nanda Pratama</p>
                         <p class="text-muted">I am currently working at PT. Wahana Ottomitra Mutiartha Tbk as a Web Developer and Backend Developer. Here, I use PHP programming language and the Laravel framework. Currently, I am learning Node.js, especially Express.js.</p>
                         <div class="d-flex justify-content-center fs-2 gap-4">
-                            <a class="text-gradient sosmed" id="sosmed" href="#!"><i class="bi bi-instagram"></i></a>
-                            <a class="text-gradient sosmed" id="sosmed" href="#!"><i class="bi bi-linkedin"></i></a>
-                            <a class="text-gradient sosmed" id="sosmed" href="#!"><i class="bi bi-github"></i></a>
+                            <a class="text-gradient sosmed" id="sosmed" href="#!" target="_blank"><i class="bi bi-instagram"></i></a>
+                            <a class="text-gradient sosmed" id="sosmed" href="https://www.linkedin.com/in/rudi-nanda-pratama/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            <a class="text-gradient sosmed" id="sosmed" href="https://github.com/paseo126" target="_blank"><i class="bi bi-github"></i></a>
                         </div>
                     </div>
                 </div>
@@ -60,11 +60,20 @@
 
 @section('btm-script')
 <script>
-   $(document).ready(function () {
-        AOS.init({
-            duration: 1200,
-        })
-    });
+
+
+   
+   $('#contactForm').submit(function (e) {
+        // if($('#contactForm').valid()){
+        //     var formData = $('#contactForm').serialize();
+
+        //     console.log(formData);
+        // }else{
+        //     $('.error').attr('for', 'error').addClass('text-danger');
+        // }
+        
+        e.preventDefault();
+   })
 
 
 
